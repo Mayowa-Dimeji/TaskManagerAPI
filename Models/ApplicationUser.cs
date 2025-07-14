@@ -1,9 +1,11 @@
+using Microsoft.AspNetCore.Identity;
+using System.Collections.Generic;
+
 namespace TaskManagerApi.Models
 {
-    using Microsoft.AspNetCore.Identity;
-
     public class ApplicationUser : IdentityUser
     {
-        // Add extra properties here if needed
+        // Optional: navigation property to user's tasks
+        public ICollection<TaskItem> Tasks { get; set; } = new List<TaskItem>();
     }
 }
