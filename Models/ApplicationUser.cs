@@ -1,6 +1,9 @@
-using Microsoft.AspNetCore.Identity;
-
-public class ApplicationUser : IdentityUser
+namespace TaskManagerApi.Models
 {
-    // Add any extra fields here (e.g., DisplayName)
+    using Microsoft.AspNetCore.Identity;
+
+    public class ApplicationUser : IdentityUser
+    {
+        // Add extra properties here if needed
+    }
 }
